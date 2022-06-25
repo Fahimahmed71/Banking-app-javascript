@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                }
+            }
+        }
+    </script>
+
+    <!-- Javascript -->
+    <script src="./js/bank.js" defer></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="tailwind.css">
+
+    <title>Bank-2</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-3xl font-bold text-center text-gray-700">Let's Get Some Money</h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+
+        <!-- Banance & Transaction -->
+        <section class="mt-10">
+            <div class="grid grid-cols-3 gap-10">
+                <div class="bg-blue-400 p-5 rounded-xl">
+                    <h3 class="text-lg font-medium text-white mb-1">Deposit</h3>
+                    <h4 class="text-5xl font-semibold text-white">$<span id="deposit-totel">00</span></h4>
+                </div>
+
+                <div class="bg-orange-300 p-5 rounded-xl">
+                    <h3 class="text-lg font-medium text-white mb-1">Withdraw</h3>
+                    <h4 class="text-5xl font-semibold text-white">$<span id="withdraw-totel">00</span></h4>
+                </div>
+
+                <div class="bg-green-600 p-5 rounded-xl">
+                    <h3 class="text-lg font-medium text-white mb-1">Balance</h3>
+                    <h4 class="text-5xl font-semibold text-white">$<span id="totel-balance">1240</span></h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit & Withdraw -->
+        <section class="mt-20">
+            <div class="grid grid-cols-2 gap-10 ">
+                <div class="bg-emerald-200 rounded-lg p-5">
+                    <h3 class="text-3xl font-bold text-gray-700">Deposit</h3>
+
+                    <div class="mt-5">
+                        <input id="amount-deposit" type="text" placeholder="Deposit Amount"
+                            class="border-2 border-green-500 rounded-md p-2 w-4/5 block">
+
+                        <button id="deposit-btn"
+                            class="bg-sky-500 px-5 py-2 text-white rounded-lg mt-3 hover:bg-green-500 font-medium">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="bg-orange-200 rounded-lg p-5">
+                    <h3 class="text-3xl font-bold text-gray-700">Withdraw</h3>
+
+                    <div class="mt-5">
+                        <input id="amount-withdraw" type="text" placeholder="Withdraw Amount"
+                            class="border-2 border-orange-500 rounded-md p-2 w-4/5 block">
+
+                        <button id="withdraw-btn"
+                            class="bg-orange-500 px-5 py-2 text-white rounded-lg mt-3 hover:bg-green-500 font-medium">Withdraw
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
