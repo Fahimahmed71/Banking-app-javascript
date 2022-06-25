@@ -1,5 +1,5 @@
 # Banking-app-javascript
-Simply enter your login &amp; password to enter the bank.
+Simply enter your email &amp; password to enter the bank.
 
 Website link: https://fahimahmed71.github.io/Banking-app-javascript/
 <br>
